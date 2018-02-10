@@ -1,0 +1,38 @@
+@font-face {
+  font-family: felt-tip-senior, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, section{
+  height:100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+#home{
+  background-image: url("../img/mobileCover.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home h1{
+position: relative;
+font-family: felt-tip-senior;
+padding: 0;
+margin: 0;
+color: #decdc5;
+font-size: 4em;
+top: 20%;
+left: 8%;
+}
