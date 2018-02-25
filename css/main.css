@@ -4,6 +4,17 @@
   font-weight: 400;
 }
 
+@font-face {
+    font-family: 'stout';
+    src: url('Stout.otf'),
+         url('stout-webfont.woff2') format('woff2'),
+         url('stout-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -15,9 +26,73 @@ html, body, section{
   margin: 0;
 }
 
+body{
+  overflow-x: hidden;
+  background-image: url("../img/aboutBG.png");
+  background-position:95%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+}
+
+
+
+section{
+  overflow: hidden;
+}
+
+
 .container-fluid{
   padding: 0;
 }
+
+.sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x:hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav ul{
+  position: relative;
+}
+
+.sidenav a {
+    font-family: felt-tip-senior;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #decdc5;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    color: #decdc5;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
 
 #home{
   background-image: url("../img/mobileCover.png");
@@ -26,13 +101,109 @@ html, body, section{
   background-repeat: no-repeat;
 }
 
-#home h1{
+
+#topBar{
+  display: block;
+  background-color: black;
+  position: fixed;
+  font-family: Stout;
+  overflow: hidden;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+}
+
+#menuIcon{
+position: absolute;
+height: 2em;
+width: 2em;
+display: inline;
+top:0.5em;
+right:5%;
+}
+
+#logo{
+  display: inline;
+  position:absolute;
+  color: white;
+  top:-0.5em;
+  left: 0.5em;
+}
+
+#myriad{
+  font-family: Myriad Pro;
+}
+
+#Title{
 position: relative;
 font-family: felt-tip-senior;
 padding: 0;
 margin: 0;
 color: #decdc5;
 font-size: 4em;
-top: 20%;
+top: 18%;
 left: 8%;
+}
+
+#Title{
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+#iconList{
+  position: relative;
+  top:70%;
+  left:2.5%;
+}
+
+#spotifyIcon{
+  position: absolute;
+  top:-0.35em;
+  width:126px;
+  height:37.8px;
+}
+
+.footer{
+bottom: 1.5em;
+width: 100%;
+height: 1.5em;
+overflow: hidden;
+background-color: black;
+}
+
+.socialMediaLinks{
+text-align: center;
+}
+
+.socialMediaLinks li{
+  display: inline;
+}
+
+.socialMediaLinks a{
+color:  #decdc5;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
 }
