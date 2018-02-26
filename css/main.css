@@ -33,6 +33,7 @@ body{
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
+  font-family: felt-tip-senior;
 
 }
 
@@ -99,6 +100,29 @@ section{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#about h1{
+  position: relative;
+  top:5%;
+  text-align: center;
+}
+
+#about p{
+  font-size: 1.5em;
+  position: relative;
+  margin: 10px;
+  top: 5%;
+}
+
+#music div{
+position: relative;
+top:5%;
+}
+
+#video iframe{
+  position: relative;
+  top:5%;
 }
 
 
