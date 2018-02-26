@@ -123,6 +123,7 @@ top:5%;
 }
 
 #video iframe{
+  display: block;
   position: relative;
   top:10%;
 }
