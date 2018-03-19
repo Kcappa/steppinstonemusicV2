@@ -92,6 +92,10 @@ section{
     margin-left: 50px;
 }
 
+#muteYouTubeVideoPlayer{
+  display: none;
+}
+
 #main {
     transition: margin-left .5s;
 }
@@ -232,5 +236,21 @@ color:  #decdc5;
 }
 
 @media (min-width: 992px) {
+
+  #Title{
+    top: 7%;
+    font-size: 9.5em;
+    left: 20%;
+  }
+  #iconList{
+    left: 20%;
+    top: 65%;
+  }
+
+  #muteYouTubeVideoPlayer{
+    position: relative;
+    display: block;
+    z-index: -99;
+  }
 
 }
