@@ -235,6 +235,19 @@ text-align: center;
 color:  #decdc5;
 }
 
+#tvCover{
+  display: none;
+}
+
+#spotifyLabel{
+  display: none;
+}
+
+#appleLabel{
+  display: none;
+}
+
+
 @media (min-width: 576px) {
 
 }
