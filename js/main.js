@@ -49,8 +49,8 @@ $('a[href*="#"]')
   var player;
   player = new YT.Player('muteYouTubeVideoPlayer', {
     videoId: 'yW_1BsijIyU', // YouTube Video ID
-    width: '100%',               // Player width (in px)
-    height: '100%',              // Player height (in px)
+    width: '60%',               // Player width (in px)
+    height: '90%',              // Player height (in px)
     playerVars: {
       autoplay: '1',        // Auto-play the video on load
       controls: '0',        // Show pause/play buttons in player

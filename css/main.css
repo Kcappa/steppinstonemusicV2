@@ -207,6 +207,14 @@ left: 8%;
   height:37.8px;
 }
 
+#spotifyIconWHITE{
+  display: none;
+}
+
+#appleIconWHITE{
+  display: none;
+}
+
 .footer{
 bottom: 1.5em;
 width: 100%;
@@ -237,20 +245,98 @@ color:  #decdc5;
 
 @media (min-width: 992px) {
 
-  #Title{
-    top: 7%;
-    font-size: 9.5em;
-    left: 20%;
+  body{
+    background-image: none;
+    background-color: white;
   }
+
+  #topBar{
+    display: none;
+  }
+
+  #home{
+  background-image: none;
+  background-color: white;
+  }
+
+  #Title{
+    display: none;
+  }
+
+  .title{
+    left:-6%;
+  }
+
   #iconList{
-    left: 20%;
-    top: 65%;
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  #spotifyIcon{
+    display: none;
+  }
+
+  #appleIcon{
+    display: none;
+  }
+
+  #spotifyLabel{
+    top: 59.5%;
+    left: 73%;
+    position: fixed;
+    display: block;
+  }
+
+  #appleLabel{
+    top:54%;
+    left:73%;
+    position: fixed;
+    display: block;
   }
 
   #muteYouTubeVideoPlayer{
+    top:3%;
+    left: 13.5%;
     position: relative;
     display: block;
-    z-index: -99;
+
   }
 
+  #tvCover{
+    position: fixed;
+    display: block;
+    top: -5%;
+    left: -4%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  #writeUp{
+    left: 20%;
+    width: 45%;
+  }
+
+  #soundcloud{
+    position: relative;
+    left:17.5%;
+
+}
+
+.youTube{
+left: 15%;
+width: 60%;
+}
+
+.footer{
+  left: 66%;
+  bottom: 3.25em;
+  width: 25%;
+  height: 1.5em;
+  overflow: hidden;
+  background: none;
+  position: fixed;
+  z-index: 3;
 }
